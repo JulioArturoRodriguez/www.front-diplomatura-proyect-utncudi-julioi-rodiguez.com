@@ -1,3 +1,9 @@
+import React, { useState } from 'react'; // Necesario para usar useState
+import { useNavigate } from 'react-router-dom'; // Necesario para usar useNavigate
+import { Link } from 'react-router-dom'; // Necesario para el Link
+import './registro.css'; // Estilos del componente
+
+
 const Registro = () => {
   const [formData, setFormData] = useState({
     username: '',
@@ -55,7 +61,7 @@ const Registro = () => {
     }
 
     try {
-      let response = await fetch('http://localhost:3000/usuario/register', {
+      let response = await fetch('${import.meta.env.VITE_BACK_URL}/usuario/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
