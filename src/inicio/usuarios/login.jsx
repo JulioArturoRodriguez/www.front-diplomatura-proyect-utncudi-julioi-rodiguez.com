@@ -19,6 +19,7 @@ const Login = () => {
         body: JSON.stringify(credentials),
       });
        response = await response.json();
+       console.log(response);
       // Verificamos si la respuesta es correcta (status 200)
       if (response && response.accesstoken) {
     
