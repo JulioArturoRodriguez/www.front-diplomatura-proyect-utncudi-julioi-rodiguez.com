@@ -1,0 +1,165 @@
+/* Fondo general de la página */
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal centrado en la pantalla */
+  .registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px; /* Ajusta el valor según sea necesario */
+  }
+  
+  /* Estilo del formulario de registro */
+  .registro-form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo transparente */
+    border: 2px solid #17a2b8; /* Borde celeste */
+    padding: 30px;
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho del formulario al 100% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Título del formulario */
+  .registro-form-container h2 {
+    color: #17a2b8; /* Color celeste */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio debajo del título */
+    font-size: 24px; /* Tamaño de fuente del título */
+    font-weight: bold;
+  }
+  
+  /* Estilo de los mensajes de error y éxito */
+  .text-danger {
+    color: #e74c3c; /* Rojo para errores */
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .text-success {
+    color: #2ecc71; /* Verde para éxitos */
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Espaciado entre los campos del formulario */
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de las etiquetas de los campos */
+  .form-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Estilo de los campos de entrada */
+  .form-control {
+    border-radius: 8px; /* Bordes redondeados para los campos de entrada */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #17a2b8; /* Borde celeste cuando el campo está enfocado */
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5); /* Resplandor suave alrededor */
+  }
+  
+  /* Estilo del botón de registro */
+  .btn-info {
+    background-color: #17a2b8; /* Color de fondo celeste */
+    border-color: #17a2b8; /* Color del borde */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px; /* Relleno del botón */
+    width: 100%; /* El botón ocupa todo el ancho */
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496; /* Cambio de color al pasar el mouse */
+    border-color: #138496;
+  }
+  
+  /* Enlace para iniciar sesión */
+  .mt-3 .text-info {
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .mt-3 .text-info:hover {
+    text-decoration: underline; /* Subraya el texto cuando pasa el mouse */
+  }
+  /* Estilos para pantallas grandes (por encima de 992px) */
+@media (min-width: 993px) {
+    .registro-form-container {
+        padding: 30px; /* Más relleno para pantallas grandes */
+        width: 50%; /* Formulario más estrecho, 50% del ancho del contenedor */
+    }
+
+    .registro-form-container h2 {
+        font-size: 28px; /* Título más grande */
+    }
+
+    .btn-info {
+        padding: 14px 20px; /* Botón con más relleno */
+    }
+
+    .registro-container {
+        margin-top: 120px; /* Ajusta el espacio superior para no solaparse con otros elementos */
+    }
+    .registro-container {
+        margin-top: 400px;
+  }
+}
+
+  /* Estilos para pantallas medianas (entre 576px y 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+    .registro-form-container {
+        padding: 25px; /* Relleno moderado en pantallas medianas */
+        width: 80%; /* Un poco más estrecho que en pantallas grandes */
+    }
+
+    .registro-form-container h2 {
+        font-size: 24px; /* Tamaño de fuente moderado para pantallas medianas */
+    }
+
+    .btn-info {
+        padding: 12px 18px; /* Botón un poco más grande */
+    }
+
+    .registro-container {
+        margin-top: 100px; /* Ajuste del espacio superior para pantallas medianas */
+    }
+    .registro-container {
+        margin-top: 400px;
+  }
+}
+
+  /* Estilo del formulario de registro en pantallas más pequeñas */
+  @media (max-width: 576px) {
+    .registro-form-container {
+      padding: 20px; /* Menos relleno en pantallas pequeñas */
+      width: 90%; /* Ancho más pequeño */
+    }
+  
+    .registro-form-container h2 {
+      font-size: 20px; /* Título más pequeño */
+    }
+  
+    .btn-info {
+      padding: 10px 15px; /* Botón con menos relleno en pantallas pequeñas */
+    }
+    .registro-container {
+        margin-top: 400px;
+  }
+}

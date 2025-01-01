@@ -1,0 +1,93 @@
+
+/* contacto.css */
+.containercontacto {
+    max-width: 800px;
+    margin: auto;
+}
+/* En tu archivo CSS */
+/* Clase personalizada para el input */
+.input-custom {
+    width: 260px;         /* El ancho será el 75% del contenedor padre */
+    height: 80px;       /* Establece la altura del input */
+    margin-left: 20px;  /* Márgenes de 20 píxeles a la izquierda */
+    margin-top: 10px;   /* Márgenes de 10 píxeles en la parte superior */
+}
+/* Clase personalizada para el input de correo */
+.input-email-custom {
+    width: 260px;         /* El ancho será el 75% del contenedor padre */
+    height: 80px;       /* Establece la altura del input */
+    margin-left: 20px;  /* Márgenes de 20 píxeles a la izquierda */
+    margin-top: 20px;   /* Márgenes de 10 píxeles en la parte superior */
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #004d99;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.alert {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+/* Aseguramos que los enlaces estén centrados */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-links .social-icons a {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.contact-links i {
+    margin-right: 8px;
+}
+
+/* Alineación responsiva */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

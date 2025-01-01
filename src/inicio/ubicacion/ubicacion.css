@@ -1,0 +1,16 @@
+.map-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.map-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-frame {
+    border: 2px solid #00BFFF; 
+    border-radius: 10px; 
+}

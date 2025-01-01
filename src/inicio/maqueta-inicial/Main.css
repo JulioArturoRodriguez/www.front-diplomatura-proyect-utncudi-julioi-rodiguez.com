@@ -1,0 +1,120 @@
+.image-scroll-container {
+  display: flex;
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  width: 100%; 
+  padding: 10px 0; 
+}
+.row {
+  min-height: 300px;
+  min-width: 250px;
+}
+
+.custom-col {
+  min-height: 200px;
+  min-width: 350px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+.image-item {
+  margin-right: 10px; 
+}
+
+
+.square-image {
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border: 2px solid #00BFFF; 
+  border-radius: 15%; 
+}
+
+
+@media (min-width: 992px) {
+  .image-item {
+      min-width: calc(20%); 
+      max-width: calc(20%); 
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .image-item {
+      min-width: calc(30%); 
+  }
+
+  .square-image {
+      height: 200px; 
+  }
+}
+
+
+@media (max-width: 767px) {
+  .image-item {
+      min-width: calc(50%);
+  }
+
+  .square-image {
+      width: 100%;
+      height: 200px; 
+      object-fit: cover; 
+  }
+}
+
+.small-btn {
+  font-size: 0.75rem;
+  padding: 5px; 
+  min-width: 30px; 
+  min-height: 30px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+.small-btn:hover {
+  background-color: rgba(255, 255, 255, 1); 
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot:hover {
+  background-color: #888;
+}
+
+.dot.active {
+  background-color: #007bff; 
+  transform: scale(1.2); 
+}
+
+.image-container {
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-scroll {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image-item {
+  min-width: 30%;
+  margin: 0 10px;
+}

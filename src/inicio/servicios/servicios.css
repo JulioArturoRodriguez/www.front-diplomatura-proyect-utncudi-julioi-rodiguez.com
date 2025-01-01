@@ -1,0 +1,153 @@
+
+
+.service-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    color: #004085; 
+}
+
+h3 {
+    color: #0056b3;
+}
+
+.services-grid .col-md-4 {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 200px;
+    min-height: 160px;
+
+}
+
+.services-grid .col-md-4:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    min-width: 200px;
+    min-height: 160px;
+}
+
+.levels .col-md-4 {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    min-width: 200px;
+    min-height: 160px;
+}
+
+.levels .col-md-4:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    min-width: 200px;
+    min-height: 160px;
+   
+}
+
+footer {
+    margin-top: 30px;
+    color: #666;
+}
+
+
+@media (min-width: 768px) {
+    .service-container {
+        padding: 0 5%;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid .col-md-4 {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    .levels .col-md-4 {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .service-container {
+        padding: 0 10%;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    .services-grid .col-md-4 {
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    .levels .col-md-4 {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .service-container {
+        padding: 0 5%;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid .col-md-4 {
+        padding: 25px;
+        margin-bottom: 30px;
+        min-width: 150px;
+        min-height: 120px;
+    }
+
+    .levels .col-md-4 {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+@media (max-width: 568px) {
+    .service-container{
+        padding: 0 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-grid .col-md-4, .levels .col-md-4 {
+        padding: 15px;
+        margin-bottom: 15px;
+        width: 100%;  
+        min-width: 0; 
+        min-height: 0; 
+    }
+
+    .services-grid, .levels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 80px;
+        min-height: 90px;
+    }}

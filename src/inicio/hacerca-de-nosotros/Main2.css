@@ -1,0 +1,152 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.containerhacer{
+  max-width: 100%; 
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+/* Tarjetas de productos */
+.product-card {
+  background-color: white;
+  border: 0.125rem solid #00bcd4; 
+  border-radius: 0; 
+  overflow: hidden; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  width: 100%;
+  height: 25rem; 
+}
+
+
+@media (min-width: 1200px) {
+  .product-card {
+    height: 30rem; 
+  }
+}
+
+
+@media (max-width: 576px) {
+  .product-card {
+    height: 18rem; 
+  }
+}
+
+.product-card:hover {
+  background-color: #f0faff; 
+  transform: scale(1.05); 
+}
+
+.product-image {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1); 
+}
+
+.product-card .card-body {
+  padding: 1.5rem;
+  text-align: center;
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.product-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-card .card-text {
+  font-size: 1rem; 
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  margin-top: 1rem; 
+}
+
+/* Estilo del botón del carrito */
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Estilos para la tabla del carrito */
+.table {
+  background-color: white;
+  border-radius: 0.5rem; 
+  border: 0.0625rem solid #ddd; 
+}
+
+.table th, .table td {
+  text-align: center;
+  padding: 1rem; 
+}
+
+.table th {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.table td button {
+  margin: 0;
+  font-size: 1rem; 
+}
+
+/* Estilo para el mensaje de compra exitosa */
+.alert-success {
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.2rem; 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+}
