@@ -61,7 +61,7 @@ const Registro = () => {
     }
 
     try {
-      let response = await fetch('http://localhost:3000/usuario/register', {
+      let response = await fetch('https://www-backend-cudi-utn-proyect-julio.onrender.com/usuario/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
