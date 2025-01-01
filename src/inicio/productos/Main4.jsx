@@ -29,7 +29,7 @@ const Main4 = () => {
       const muestra = localStorage.getItem('token');
       console.log(muestra);
       // Llamada al backend para agregar el producto al carrito
-      const response = await fetch('http://localhost:3000/carrito/carrito/agregar', {
+      const response = await fetch('https://www-backend-cudi-utn-proyect-julio.onrender.com/carrito/carrito/agregar', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const datos = {nombre: product, username: username};
       const muestra = localStorage.getItem('token');
       console.log(muestra);
       // Llamada al backend para eliminar el producto del carrito
-      const response = await fetch('http://localhost:3000/carrito/carrito/eliminar', {
+      const response = await fetch('https://www-backend-cudi-utn-proyect-julio.onrender.com/carrito/carrito/eliminar', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
