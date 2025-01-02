@@ -67,8 +67,11 @@ El frontend utiliza las siguientes tecnologías y herramientas:
    ```bash
    git clone https://github.com/JulioArturoRodriguez/www.backend-cudi-utn-proyect-julio-rodriguez.git
 
-###Estructura de Directorios
-   
+# Estructura del Proyecto Frontend
+
+Este es el esquema de directorios y archivos del proyecto frontend. Está diseñado para ser modular y escalable, facilitando la organización del código.
+
+```plaintext
 /project-root
 ├── /public
 │   └── index.html                  # Punto de entrada del proyecto
