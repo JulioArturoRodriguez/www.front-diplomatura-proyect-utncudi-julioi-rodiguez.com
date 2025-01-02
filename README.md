@@ -129,7 +129,7 @@ Este es el esquema de directorios y archivos del proyecto frontend. Está diseñ
 ├── package.json                    # Configuración de npm
 ├── README.md                       # Documentación del proyecto
 └── vite.config.js                  # Configuración de Vite
-
+---
 
 #INTEGRANTES
 ##JULIO ARTURO RODRIGUEZ
